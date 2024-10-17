@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5DB516682CBF8AA800476D77 /* MyTCATutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */; };
-		5DB5166A2CBF8AA800476D77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516692CBF8AA800476D77 /* ContentView.swift */; };
+		5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516692CBF8AA800476D77 /* RootView.swift */; };
 		5DB5166C2CBF8AAA00476D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5166B2CBF8AAA00476D77 /* Assets.xcassets */; };
 		5DB516702CBF8AAA00476D77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5166F2CBF8AAA00476D77 /* Preview Assets.xcassets */; };
 		5DB5167A2CBF8AAB00476D77 /* MyTCATutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516792CBF8AAB00476D77 /* MyTCATutorialTests.swift */; };
 		5DB516842CBF8AAB00476D77 /* MyTCATutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516832CBF8AAB00476D77 /* MyTCATutorialUITests.swift */; };
 		5DB516862CBF8AAB00476D77 /* MyTCATutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516852CBF8AAB00476D77 /* MyTCATutorialUITestsLaunchTests.swift */; };
+		5DB516942CBF935000476D77 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5DB516932CBF935000476D77 /* ComposableArchitecture */; };
+		5DB516972CC0D1A700476D77 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516962CC0D1A700476D77 /* AboutView.swift */; };
+		5DB516992CC0D44D00476D77 /* TemplateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516982CC0D44D00476D77 /* TemplateText.swift */; };
+		5DB5169B2CC0DFA600476D77 /* UIViewRepresented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5169A2CC0DFA600476D77 /* UIViewRepresented.swift */; };
+		5DB5169D2CC0E0E800476D77 /* ResignFirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5169C2CC0E0E800476D77 /* ResignFirstResponder.swift */; };
+		5DB5169F2CC0E8B700476D77 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5169E2CC0E8B700476D77 /* CircularProgressView.swift */; };
+		5DB516A22CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A12CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		5DB516642CBF8AA800476D77 /* MyTCATutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTCATutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTCATutorialApp.swift; sourceTree = "<group>"; };
-		5DB516692CBF8AA800476D77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5DB516692CBF8AA800476D77 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		5DB5166B2CBF8AAA00476D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DB5166D2CBF8AAA00476D77 /* MyTCATutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTCATutorial.entitlements; sourceTree = "<group>"; };
 		5DB5166F2CBF8AAA00476D77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +52,12 @@
 		5DB5167F2CBF8AAB00476D77 /* MyTCATutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTCATutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB516832CBF8AAB00476D77 /* MyTCATutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTCATutorialUITests.swift; sourceTree = "<group>"; };
 		5DB516852CBF8AAB00476D77 /* MyTCATutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTCATutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DB516962CC0D1A700476D77 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		5DB516982CC0D44D00476D77 /* TemplateText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateText.swift; sourceTree = "<group>"; };
+		5DB5169A2CC0DFA600476D77 /* UIViewRepresented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresented.swift; sourceTree = "<group>"; };
+		5DB5169C2CC0E0E800476D77 /* ResignFirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResignFirstResponder.swift; sourceTree = "<group>"; };
+		5DB5169E2CC0E8B700476D77 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		5DB516A12CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-AlertsAndConfirmationDialogs.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB516942CBF935000476D77 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */,
-				5DB516692CBF8AA800476D77 /* ContentView.swift */,
+				5DB516692CBF8AA800476D77 /* RootView.swift */,
+				5DB516A02CC0E9F300476D77 /* CaseStudyViews */,
+				5DB516952CC0D17500476D77 /* Internal */,
 				5DB5166B2CBF8AAA00476D77 /* Assets.xcassets */,
 				5DB5166D2CBF8AAA00476D77 /* MyTCATutorial.entitlements */,
 				5DB5166E2CBF8AAA00476D77 /* Preview Content */,
@@ -129,6 +145,26 @@
 			path = MyTCATutorialUITests;
 			sourceTree = "<group>";
 		};
+		5DB516952CC0D17500476D77 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				5DB516962CC0D1A700476D77 /* AboutView.swift */,
+				5DB516982CC0D44D00476D77 /* TemplateText.swift */,
+				5DB5169A2CC0DFA600476D77 /* UIViewRepresented.swift */,
+				5DB5169C2CC0E0E800476D77 /* ResignFirstResponder.swift */,
+				5DB5169E2CC0E8B700476D77 /* CircularProgressView.swift */,
+			);
+			name = Internal;
+			sourceTree = "<group>";
+		};
+		5DB516A02CC0E9F300476D77 /* CaseStudyViews */ = {
+			isa = PBXGroup;
+			children = (
+				5DB516A12CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift */,
+			);
+			path = CaseStudyViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +181,9 @@
 			dependencies = (
 			);
 			name = MyTCATutorial;
+			packageProductDependencies = (
+				5DB516932CBF935000476D77 /* ComposableArchitecture */,
+			);
 			productName = MyTCATutorial;
 			productReference = 5DB516642CBF8AA800476D77 /* MyTCATutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 5DB5165B2CBF8AA800476D77;
+			packageReferences = (
+				5DB516922CBF935000476D77 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 5DB516652CBF8AA800476D77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DB5166A2CBF8AA800476D77 /* ContentView.swift in Sources */,
+				5DB516A22CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift in Sources */,
+				5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */,
+				5DB516972CC0D1A700476D77 /* AboutView.swift in Sources */,
+				5DB516992CC0D44D00476D77 /* TemplateText.swift in Sources */,
+				5DB5169F2CC0E8B700476D77 /* CircularProgressView.swift in Sources */,
+				5DB5169D2CC0E0E800476D77 /* ResignFirstResponder.swift in Sources */,
+				5DB5169B2CC0DFA600476D77 /* UIViewRepresented.swift in Sources */,
 				5DB516682CBF8AA800476D77 /* MyTCATutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +665,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DB516922CBF935000476D77 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture#Installation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DB516932CBF935000476D77 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DB516922CBF935000476D77 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DB5165C2CBF8AA800476D77 /* Project object */;
 }
