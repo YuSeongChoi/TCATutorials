@@ -50,7 +50,7 @@ struct AlertAndConfirmationDialog {
         Reduce { state, action in
             switch action {
             case .alert(.presented(.incrementButtonTapped)), .confirmationDialog(.presented(.incrementButtonTapped)):
-                state.alert = AlertState { TextState("Incremented!") }
+                state.alert = AlertState { TextState("1 증가!") }
                 state.count += 1
                 return .none
                 
@@ -77,7 +77,7 @@ struct AlertAndConfirmationDialog {
                 return .none
                 
             case .confirmationDialog(.presented(.decrementButtonTapped)):
-                state.alert = AlertState { TextState("Decremented!") }
+                state.alert = AlertState { TextState("1 감소!") }
                 state.count -= 1
                 return .none
                 

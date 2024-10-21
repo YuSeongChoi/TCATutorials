@@ -21,6 +21,9 @@
 		5DB5169D2CC0E0E800476D77 /* ResignFirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5169C2CC0E0E800476D77 /* ResignFirstResponder.swift */; };
 		5DB5169F2CC0E8B700476D77 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5169E2CC0E8B700476D77 /* CircularProgressView.swift */; };
 		5DB516A22CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A12CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift */; };
+		5DB516A42CC1035900476D77 /* 01-Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A32CC1035900476D77 /* 01-Animations.swift */; };
+		5DB516A62CC640DB00476D77 /* 01-BindingBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A52CC640DB00476D77 /* 01-BindingBasics.swift */; };
+		5DB516A82CC649FC00476D77 /* 01-BindingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A72CC649FC00476D77 /* 01-BindingForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		5DB5169C2CC0E0E800476D77 /* ResignFirstResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResignFirstResponder.swift; sourceTree = "<group>"; };
 		5DB5169E2CC0E8B700476D77 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		5DB516A12CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-AlertsAndConfirmationDialogs.swift"; sourceTree = "<group>"; };
+		5DB516A32CC1035900476D77 /* 01-Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-Animations.swift"; sourceTree = "<group>"; };
+		5DB516A52CC640DB00476D77 /* 01-BindingBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-BindingBasics.swift"; sourceTree = "<group>"; };
+		5DB516A72CC649FC00476D77 /* 01-BindingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-BindingForm.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				5DB516A12CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift */,
+				5DB516A32CC1035900476D77 /* 01-Animations.swift */,
+				5DB516A52CC640DB00476D77 /* 01-BindingBasics.swift */,
+				5DB516A72CC649FC00476D77 /* 01-BindingForm.swift */,
 			);
 			path = CaseStudyViews;
 			sourceTree = "<group>";
@@ -302,11 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DB516A22CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift in Sources */,
+				5DB516A82CC649FC00476D77 /* 01-BindingForm.swift in Sources */,
+				5DB516A42CC1035900476D77 /* 01-Animations.swift in Sources */,
 				5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */,
 				5DB516972CC0D1A700476D77 /* AboutView.swift in Sources */,
 				5DB516992CC0D44D00476D77 /* TemplateText.swift in Sources */,
 				5DB5169F2CC0E8B700476D77 /* CircularProgressView.swift in Sources */,
 				5DB5169D2CC0E0E800476D77 /* ResignFirstResponder.swift in Sources */,
+				5DB516A62CC640DB00476D77 /* 01-BindingBasics.swift in Sources */,
 				5DB5169B2CC0DFA600476D77 /* UIViewRepresented.swift in Sources */,
 				5DB516682CBF8AA800476D77 /* MyTCATutorialApp.swift in Sources */,
 			);
