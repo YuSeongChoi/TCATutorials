@@ -24,6 +24,9 @@
 		5DB516A42CC1035900476D77 /* 01-Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A32CC1035900476D77 /* 01-Animations.swift */; };
 		5DB516A62CC640DB00476D77 /* 01-BindingBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A52CC640DB00476D77 /* 01-BindingBasics.swift */; };
 		5DB516A82CC649FC00476D77 /* 01-BindingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A72CC649FC00476D77 /* 01-BindingForm.swift */; };
+		5DB516AA2CC779BA00476D77 /* 01-TwoCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A92CC779BA00476D77 /* 01-TwoCounters.swift */; };
+		5DB516AC2CC7867900476D77 /* 01-Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AB2CC7867900476D77 /* 01-Counter.swift */; };
+		5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		5DB516A32CC1035900476D77 /* 01-Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-Animations.swift"; sourceTree = "<group>"; };
 		5DB516A52CC640DB00476D77 /* 01-BindingBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-BindingBasics.swift"; sourceTree = "<group>"; };
 		5DB516A72CC649FC00476D77 /* 01-BindingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-BindingForm.swift"; sourceTree = "<group>"; };
+		5DB516A92CC779BA00476D77 /* 01-TwoCounters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-TwoCounters.swift"; sourceTree = "<group>"; };
+		5DB516AB2CC7867900476D77 /* 01-Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-Counter.swift"; sourceTree = "<group>"; };
+		5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-FocusState.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,9 @@
 				5DB516A32CC1035900476D77 /* 01-Animations.swift */,
 				5DB516A52CC640DB00476D77 /* 01-BindingBasics.swift */,
 				5DB516A72CC649FC00476D77 /* 01-BindingForm.swift */,
+				5DB516A92CC779BA00476D77 /* 01-TwoCounters.swift */,
+				5DB516AB2CC7867900476D77 /* 01-Counter.swift */,
+				5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */,
 			);
 			path = CaseStudyViews;
 			sourceTree = "<group>";
@@ -311,11 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DB516A22CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift in Sources */,
+				5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */,
 				5DB516A82CC649FC00476D77 /* 01-BindingForm.swift in Sources */,
+				5DB516AA2CC779BA00476D77 /* 01-TwoCounters.swift in Sources */,
 				5DB516A42CC1035900476D77 /* 01-Animations.swift in Sources */,
 				5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */,
 				5DB516972CC0D1A700476D77 /* AboutView.swift in Sources */,
 				5DB516992CC0D44D00476D77 /* TemplateText.swift in Sources */,
+				5DB516AC2CC7867900476D77 /* 01-Counter.swift in Sources */,
 				5DB5169F2CC0E8B700476D77 /* CircularProgressView.swift in Sources */,
 				5DB5169D2CC0E0E800476D77 /* ResignFirstResponder.swift in Sources */,
 				5DB516A62CC640DB00476D77 /* 01-BindingBasics.swift in Sources */,

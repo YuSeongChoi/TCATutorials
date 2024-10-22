@@ -79,8 +79,26 @@ struct BindingFormView: View {
             }
             .disabled(store.toggleIsOn)
             
+            Toggle("Disable other controls", isOn: $store.toggleIsOn.resignFirstResponder())
             
+            Stepper("Max slider value: \(store.stepCount)", value: $store.stepCount, in: 0...100)
+                .disabled(store.toggleIsOn)
+            
+            HStack {
+                Text("Slider value: \(Int(store.sliderValue))")
+                
+                Slider(value: $store.sliderValue, in: 0...Double(store.stepCount))
+                    .tint(.accentColor)
+            }
+            .disabled(store.toggleIsOn)
+            
+            Button("Reset") {
+                store.send(.resetButtonTapped)
+            }
+            .tint(.red)
         }
+        .monospaced()
+        .navigationTitle("Bindings form")
     }
 }
 
