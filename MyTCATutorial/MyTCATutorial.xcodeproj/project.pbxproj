@@ -27,6 +27,7 @@
 		5DB516AA2CC779BA00476D77 /* 01-TwoCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516A92CC779BA00476D77 /* 01-TwoCounters.swift */; };
 		5DB516AC2CC7867900476D77 /* 01-Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AB2CC7867900476D77 /* 01-Counter.swift */; };
 		5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */; };
+		5DB516B02CC8CB0E00476D77 /* 01-OptionalBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		5DB516A92CC779BA00476D77 /* 01-TwoCounters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-TwoCounters.swift"; sourceTree = "<group>"; };
 		5DB516AB2CC7867900476D77 /* 01-Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-Counter.swift"; sourceTree = "<group>"; };
 		5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-FocusState.swift"; sourceTree = "<group>"; };
+		5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-OptionalBasics.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				5DB516A92CC779BA00476D77 /* 01-TwoCounters.swift */,
 				5DB516AB2CC7867900476D77 /* 01-Counter.swift */,
 				5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */,
+				5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */,
 			);
 			path = CaseStudyViews;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				5DB516A22CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift in Sources */,
 				5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */,
 				5DB516A82CC649FC00476D77 /* 01-BindingForm.swift in Sources */,
+				5DB516B02CC8CB0E00476D77 /* 01-OptionalBasics.swift in Sources */,
 				5DB516AA2CC779BA00476D77 /* 01-TwoCounters.swift in Sources */,
 				5DB516A42CC1035900476D77 /* 01-Animations.swift in Sources */,
 				5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */,
