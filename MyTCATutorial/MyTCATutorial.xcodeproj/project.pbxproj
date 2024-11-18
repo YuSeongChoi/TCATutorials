@@ -28,6 +28,8 @@
 		5DB516AC2CC7867900476D77 /* 01-Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AB2CC7867900476D77 /* 01-Counter.swift */; };
 		5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */; };
 		5DB516B02CC8CB0E00476D77 /* 01-OptionalBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */; };
+		5DB516B52CCF5D8000476D77 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516B42CCF5D8000476D77 /* FileStorage.swift */; };
+		5DF820D12CEADEFC00DFA53B /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF820D02CEADEFC00DFA53B /* CounterFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		5DB516AB2CC7867900476D77 /* 01-Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-Counter.swift"; sourceTree = "<group>"; };
 		5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-FocusState.swift"; sourceTree = "<group>"; };
 		5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-OptionalBasics.swift"; sourceTree = "<group>"; };
+		5DB516B42CCF5D8000476D77 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		5DF820D02CEADEFC00DFA53B /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			children = (
 				5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */,
 				5DB516692CBF8AA800476D77 /* RootView.swift */,
+				5DF820CF2CEADEB300DFA53B /* Tutorial */,
 				5DB516A02CC0E9F300476D77 /* CaseStudyViews */,
 				5DB516952CC0D17500476D77 /* Internal */,
 				5DB5166B2CBF8AAA00476D77 /* Assets.xcassets */,
@@ -174,6 +179,15 @@
 		5DB516A02CC0E9F300476D77 /* CaseStudyViews */ = {
 			isa = PBXGroup;
 			children = (
+				5DB516B22CCF5D3B00476D77 /* Basics */,
+				5DB516B32CCF5D5800476D77 /* Shared */,
+			);
+			path = CaseStudyViews;
+			sourceTree = "<group>";
+		};
+		5DB516B22CCF5D3B00476D77 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
 				5DB516A12CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift */,
 				5DB516A32CC1035900476D77 /* 01-Animations.swift */,
 				5DB516A52CC640DB00476D77 /* 01-BindingBasics.swift */,
@@ -183,7 +197,23 @@
 				5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */,
 				5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */,
 			);
-			path = CaseStudyViews;
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		5DB516B32CCF5D5800476D77 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5DB516B42CCF5D8000476D77 /* FileStorage.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		5DF820CF2CEADEB300DFA53B /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				5DF820D02CEADEFC00DFA53B /* CounterFeature.swift */,
+			);
+			name = Tutorial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DB516A22CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift in Sources */,
+				5DB516B52CCF5D8000476D77 /* FileStorage.swift in Sources */,
 				5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */,
 				5DB516A82CC649FC00476D77 /* 01-BindingForm.swift in Sources */,
 				5DB516B02CC8CB0E00476D77 /* 01-OptionalBasics.swift in Sources */,
@@ -332,6 +363,7 @@
 				5DB516972CC0D1A700476D77 /* AboutView.swift in Sources */,
 				5DB516992CC0D44D00476D77 /* TemplateText.swift in Sources */,
 				5DB516AC2CC7867900476D77 /* 01-Counter.swift in Sources */,
+				5DF820D12CEADEFC00DFA53B /* CounterFeature.swift in Sources */,
 				5DB5169F2CC0E8B700476D77 /* CircularProgressView.swift in Sources */,
 				5DB5169D2CC0E0E800476D77 /* ResignFirstResponder.swift in Sources */,
 				5DB516A62CC640DB00476D77 /* 01-BindingBasics.swift in Sources */,
