@@ -12,14 +12,15 @@ import SwiftUI
 struct MyTCATutorialApp: App {
     static let store = Store(initialState: CounterFeature.State()) {
         CounterFeature()
+            ._printChanges()
     }
     
     var body: some Scene {
         WindowGroup {
             // MARK: - Case Study 뷰로 실행
-            RootView()
+//            RootView()
             // MARK: - Tutorial 뷰로 실행
-//            CounterTutoView(store: MyTCATutorialApp.store)
+            CounterTutoView(store: MyTCATutorialApp.store)
         }
     }
 }
