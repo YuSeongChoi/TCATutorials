@@ -10,8 +10,13 @@ import SwiftUI
 
 @main
 struct MyTCATutorialApp: App {
-    static let store = Store(initialState: CounterFeature.State()) {
+    static let counterStore = Store(initialState: CounterFeature.State()) {
         CounterFeature()
+            ._printChanges()
+    }
+    
+    static let appStore = Store(initialState: AppFeature.State()) {
+        AppFeature()
             ._printChanges()
     }
     
@@ -20,7 +25,9 @@ struct MyTCATutorialApp: App {
             // MARK: - Case Study 뷰로 실행
 //            RootView()
             // MARK: - Tutorial 뷰로 실행
-            CounterTutoView(store: MyTCATutorialApp.store)
+//            CounterTutoView(store: MyTCATutorialApp.counterStore)
+            // MARK: - APPState 뷰로 실행
+            AppView(store: MyTCATutorialApp.appStore)
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D45E1452D01976A00F30ABD /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45E1442D01976A00F30ABD /* AddContactFeature.swift */; };
 		5DB516682CBF8AA800476D77 /* MyTCATutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */; };
 		5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516692CBF8AA800476D77 /* RootView.swift */; };
 		5DB5166C2CBF8AAA00476D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5166B2CBF8AAA00476D77 /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		5DB5167A2CBF8AAB00476D77 /* MyTCATutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516792CBF8AAB00476D77 /* MyTCATutorialTests.swift */; };
 		5DB516842CBF8AAB00476D77 /* MyTCATutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516832CBF8AAB00476D77 /* MyTCATutorialUITests.swift */; };
 		5DB516862CBF8AAB00476D77 /* MyTCATutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516852CBF8AAB00476D77 /* MyTCATutorialUITestsLaunchTests.swift */; };
-		5DB516942CBF935000476D77 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5DB516932CBF935000476D77 /* ComposableArchitecture */; };
 		5DB516972CC0D1A700476D77 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516962CC0D1A700476D77 /* AboutView.swift */; };
 		5DB516992CC0D44D00476D77 /* TemplateText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516982CC0D44D00476D77 /* TemplateText.swift */; };
 		5DB5169B2CC0DFA600476D77 /* UIViewRepresented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5169A2CC0DFA600476D77 /* UIViewRepresented.swift */; };
@@ -29,7 +29,13 @@
 		5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */; };
 		5DB516B02CC8CB0E00476D77 /* 01-OptionalBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */; };
 		5DB516B52CCF5D8000476D77 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516B42CCF5D8000476D77 /* FileStorage.swift */; };
+		5DCA4F4C2CEEEFD6007812E4 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA4F4B2CEEEFD6007812E4 /* NumberFactClient.swift */; };
+		5DCA4F4E2CF03C8F007812E4 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA4F4D2CF03C8F007812E4 /* AppFeature.swift */; };
+		5DCA4F522CF04284007812E4 /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA4F512CF04284007812E4 /* AppFeatureTests.swift */; };
+		5DCA4F5F2D01879F007812E4 /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA4F5E2D01879F007812E4 /* ContactsFeature.swift */; };
 		5DF820D12CEADEFC00DFA53B /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF820D02CEADEFC00DFA53B /* CounterFeature.swift */; };
+		5DF820DA2CEC7D4500DFA53B /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF820D42CEC52B100DFA53B /* CounterFeatureTests.swift */; };
+		5DF820DD2CEDA2F500DFA53B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5DF820DC2CEDA2F500DFA53B /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D45E1442D01976A00F30ABD /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 		5DB516642CBF8AA800476D77 /* MyTCATutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTCATutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTCATutorialApp.swift; sourceTree = "<group>"; };
 		5DB516692CBF8AA800476D77 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -75,8 +82,13 @@
 		5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-FocusState.swift"; sourceTree = "<group>"; };
 		5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-OptionalBasics.swift"; sourceTree = "<group>"; };
 		5DB516B42CCF5D8000476D77 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		5DCA4F4B2CEEEFD6007812E4 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
+		5DCA4F4D2CF03C8F007812E4 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		5DCA4F512CF04284007812E4 /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
+		5DCA4F5E2D01879F007812E4 /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
 		5DF820D02CEADEFC00DFA53B /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		5DF820D22CEB2FE500DFA53B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5DF820D42CEC52B100DFA53B /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DB516942CBF935000476D77 /* ComposableArchitecture in Frameworks */,
+				5DF820DD2CEDA2F500DFA53B /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,12 +222,34 @@
 			name = Shared;
 			sourceTree = "<group>";
 		};
+		5DCA4F4A2CEEEFC6007812E4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5DCA4F4B2CEEEFD6007812E4 /* NumberFactClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		5DF820CF2CEADEB300DFA53B /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
 				5DF820D02CEADEFC00DFA53B /* CounterFeature.swift */,
+				5DCA4F4D2CF03C8F007812E4 /* AppFeature.swift */,
+				5DCA4F5E2D01879F007812E4 /* ContactsFeature.swift */,
+				5D45E1442D01976A00F30ABD /* AddContactFeature.swift */,
+				5DCA4F4A2CEEEFC6007812E4 /* Network */,
+				5DF820D32CEC527600DFA53B /* Tests */,
 			);
 			name = Tutorial;
+			sourceTree = "<group>";
+		};
+		5DF820D32CEC527600DFA53B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5DF820D42CEC52B100DFA53B /* CounterFeatureTests.swift */,
+				5DCA4F512CF04284007812E4 /* AppFeatureTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +269,7 @@
 			);
 			name = MyTCATutorial;
 			packageProductDependencies = (
-				5DB516932CBF935000476D77 /* ComposableArchitecture */,
+				5DF820DC2CEDA2F500DFA53B /* ComposableArchitecture */,
 			);
 			productName = MyTCATutorial;
 			productReference = 5DB516642CBF8AA800476D77 /* MyTCATutorial.app */;
@@ -310,7 +344,7 @@
 			);
 			mainGroup = 5DB5165B2CBF8AA800476D77;
 			packageReferences = (
-				5DB516922CBF935000476D77 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				5DF820DB2CEDA2F500DFA53B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 5DB516652CBF8AA800476D77 /* Products */;
 			projectDirPath = "";
@@ -359,6 +393,7 @@
 				5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */,
 				5DB516A82CC649FC00476D77 /* 01-BindingForm.swift in Sources */,
 				5DB516B02CC8CB0E00476D77 /* 01-OptionalBasics.swift in Sources */,
+				5DCA4F4E2CF03C8F007812E4 /* AppFeature.swift in Sources */,
 				5DB516AA2CC779BA00476D77 /* 01-TwoCounters.swift in Sources */,
 				5DB516A42CC1035900476D77 /* 01-Animations.swift in Sources */,
 				5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */,
@@ -366,11 +401,14 @@
 				5DB516992CC0D44D00476D77 /* TemplateText.swift in Sources */,
 				5DB516AC2CC7867900476D77 /* 01-Counter.swift in Sources */,
 				5DF820D12CEADEFC00DFA53B /* CounterFeature.swift in Sources */,
+				5D45E1452D01976A00F30ABD /* AddContactFeature.swift in Sources */,
 				5DB5169F2CC0E8B700476D77 /* CircularProgressView.swift in Sources */,
 				5DB5169D2CC0E0E800476D77 /* ResignFirstResponder.swift in Sources */,
 				5DB516A62CC640DB00476D77 /* 01-BindingBasics.swift in Sources */,
+				5DCA4F4C2CEEEFD6007812E4 /* NumberFactClient.swift in Sources */,
 				5DB5169B2CC0DFA600476D77 /* UIViewRepresented.swift in Sources */,
 				5DB516682CBF8AA800476D77 /* MyTCATutorialApp.swift in Sources */,
+				5DCA4F5F2D01879F007812E4 /* ContactsFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +417,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DB5167A2CBF8AAB00476D77 /* MyTCATutorialTests.swift in Sources */,
+				5DF820DA2CEC7D4500DFA53B /* CounterFeatureTests.swift in Sources */,
+				5DCA4F522CF04284007812E4 /* AppFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +505,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -518,6 +559,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = "";
 			};
 			name = Release;
 		};
@@ -614,7 +656,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ys.MyTCATutorialTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,7 +680,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ys.MyTCATutorialTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -731,20 +775,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5DB516922CBF935000476D77 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		5DF820DB2CEDA2F500DFA53B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture#Installation";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.15.1;
+				minimumVersion = 1.16.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5DB516932CBF935000476D77 /* ComposableArchitecture */ = {
+		5DF820DC2CEDA2F500DFA53B /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5DB516922CBF935000476D77 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = 5DF820DB2CEDA2F500DFA53B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
