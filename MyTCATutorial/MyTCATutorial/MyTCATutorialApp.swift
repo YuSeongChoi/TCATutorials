@@ -20,6 +20,11 @@ struct MyTCATutorialApp: App {
             ._printChanges()
     }
     
+    static let contactStore = Store(initialState: ContactsFeature.State()) {
+        ContactsFeature()
+            ._printChanges()
+    }
+    
     var body: some Scene {
         WindowGroup {
             // MARK: - Case Study 뷰로 실행
@@ -27,7 +32,9 @@ struct MyTCATutorialApp: App {
             // MARK: - Tutorial 뷰로 실행
 //            CounterTutoView(store: MyTCATutorialApp.counterStore)
             // MARK: - APPState 뷰로 실행
-            AppView(store: MyTCATutorialApp.appStore)
+//            AppView(store: MyTCATutorialApp.appStore)
+            // MARK: - ContactState 뷰로 실행
+            ContactsView(store: MyTCATutorialApp.contactStore)
         }
     }
 }
