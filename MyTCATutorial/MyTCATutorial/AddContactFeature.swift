@@ -21,7 +21,8 @@ struct AddContactFeature {
         case setName(String)
         case delegate(Delegate)
         
-        enum Delegate: Equatable {
+        @CasePathable
+        enum Delegate {
 //            case cancel
             case saveContact(Contact)
         }

@@ -29,11 +29,13 @@ struct ContactsFeature {
         case destination(PresentationAction<Destination.Action>)
 //        case addContact(PresentationAction<AddContactFeature.Action>)
 //        case alert(PresentationAction<Alert>)
+        
         enum Alert: Equatable {
             case confirmDeletion(id: Contact.ID)
         }
     }
     
+    @Dependency(\.uuid) var uuid
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
@@ -41,7 +43,7 @@ struct ContactsFeature {
 //                state.addContact = AddContactFeature.State(contact: Contact(id: .init(), name: ""))
                 state.destination = .addContact(
                   AddContactFeature.State(
-                    contact: Contact(id: UUID(), name: "")
+                    contact: Contact(id: self.uuid(), name: "")
                   )
                 )
                 return .none
@@ -59,15 +61,7 @@ struct ContactsFeature {
                 return .none
                 
             case let .deleteButtonTapped(id: id):
-                state.destination = .alert(
-                    AlertState {
-                        TextState("삭제하시겠습니까?")
-                    } actions: {
-                        ButtonState(role: .destructive, action: .confirmDeletion(id: id)) {
-                            TextState("삭제")
-                        }
-                    }
-                )
+                state.destination = .alert(.deleteConfirmation(id: id))
                 return .none
             }
         }
@@ -84,6 +78,18 @@ extension ContactsFeature {
 }
 
 extension ContactsFeature.Destination.State: Equatable {}
+
+extension AlertState where Action == ContactsFeature.Action.Alert {
+    static func deleteConfirmation(id: UUID) -> Self {
+        Self {
+            TextState("삭제하시겠습니까?")
+        } actions: {
+            ButtonState(role: .destructive, action: .confirmDeletion(id: id)) {
+                TextState("삭제")
+            }
+        }
+    }
+}
 
 struct ContactsView: View {
     @Bindable var store: StoreOf<ContactsFeature>
