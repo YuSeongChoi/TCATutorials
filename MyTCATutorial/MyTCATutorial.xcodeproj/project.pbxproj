@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5D0D2FB92D0A7EDF00439560 /* ContactsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D2FB62D0975C200439560 /* ContactsFeatureTests.swift */; };
 		5D45E1452D01976A00F30ABD /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45E1442D01976A00F30ABD /* AddContactFeature.swift */; };
+		5D5447AA2D1E66CB009CFEF5 /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5447A92D1E66CB009CFEF5 /* SyncUpsList.swift */; };
+		5D5447B22D1E7439009CFEF5 /* SyncUpsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5447B02D1E741A009CFEF5 /* SyncUpsListTests.swift */; };
+		5D5447B42D1E77F5009CFEF5 /* SyncUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5447B32D1E77F5009CFEF5 /* SyncUpForm.swift */; };
 		5DB516682CBF8AA800476D77 /* MyTCATutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */; };
 		5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516692CBF8AA800476D77 /* RootView.swift */; };
 		5DB5166C2CBF8AAA00476D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5166B2CBF8AAA00476D77 /* Assets.xcassets */; };
@@ -61,6 +64,9 @@
 /* Begin PBXFileReference section */
 		5D0D2FB62D0975C200439560 /* ContactsFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeatureTests.swift; sourceTree = "<group>"; };
 		5D45E1442D01976A00F30ABD /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
+		5D5447A92D1E66CB009CFEF5 /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
+		5D5447B02D1E741A009CFEF5 /* SyncUpsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsListTests.swift; sourceTree = "<group>"; };
+		5D5447B32D1E77F5009CFEF5 /* SyncUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpForm.swift; sourceTree = "<group>"; };
 		5DB516642CBF8AA800476D77 /* MyTCATutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTCATutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTCATutorialApp.swift; sourceTree = "<group>"; };
 		5DB516692CBF8AA800476D77 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -123,6 +129,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D5447AB2D1E73E4009CFEF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8797D2D100827005665C7 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D5447AC2D1E73EB009CFEF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D5447A92D1E66CB009CFEF5 /* SyncUpsList.swift */,
+				5D5447B32D1E77F5009CFEF5 /* SyncUpForm.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D5447AF2D1E740C009CFEF5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5D5447B02D1E741A009CFEF5 /* SyncUpsListTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		5DB5165B2CBF8AA800476D77 = {
 			isa = PBXGroup;
 			children = (
@@ -264,7 +295,9 @@
 		5DF8797C2D100715005665C7 /* SyncUps */ = {
 			isa = PBXGroup;
 			children = (
-				5DF8797D2D100827005665C7 /* Models.swift */,
+				5D5447AB2D1E73E4009CFEF5 /* Model */,
+				5D5447AC2D1E73EB009CFEF5 /* View */,
+				5D5447AF2D1E740C009CFEF5 /* Tests */,
 			);
 			path = SyncUps;
 			sourceTree = "<group>";
@@ -410,6 +443,8 @@
 				5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */,
 				5DB516A82CC649FC00476D77 /* 01-BindingForm.swift in Sources */,
 				5DB516B02CC8CB0E00476D77 /* 01-OptionalBasics.swift in Sources */,
+				5D5447AA2D1E66CB009CFEF5 /* SyncUpsList.swift in Sources */,
+				5D5447B42D1E77F5009CFEF5 /* SyncUpForm.swift in Sources */,
 				5DCA4F4E2CF03C8F007812E4 /* AppFeature.swift in Sources */,
 				5DB516AA2CC779BA00476D77 /* 01-TwoCounters.swift in Sources */,
 				5DB516A42CC1035900476D77 /* 01-Animations.swift in Sources */,
@@ -435,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5447B22D1E7439009CFEF5 /* SyncUpsListTests.swift in Sources */,
 				5DB5167A2CBF8AAB00476D77 /* MyTCATutorialTests.swift in Sources */,
 				5DF820DA2CEC7D4500DFA53B /* CounterFeatureTests.swift in Sources */,
 				5DCA4F522CF04284007812E4 /* AppFeatureTests.swift in Sources */,
