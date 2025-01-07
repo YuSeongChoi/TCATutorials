@@ -12,6 +12,7 @@
 		5D5447AA2D1E66CB009CFEF5 /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5447A92D1E66CB009CFEF5 /* SyncUpsList.swift */; };
 		5D5447B22D1E7439009CFEF5 /* SyncUpsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5447B02D1E741A009CFEF5 /* SyncUpsListTests.swift */; };
 		5D5447B42D1E77F5009CFEF5 /* SyncUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5447B32D1E77F5009CFEF5 /* SyncUpForm.swift */; };
+		5D5447CC2D2BAD18009CFEF5 /* SyncUpFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5447CB2D2BAD18009CFEF5 /* SyncUpFormTests.swift */; };
 		5DB516682CBF8AA800476D77 /* MyTCATutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */; };
 		5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516692CBF8AA800476D77 /* RootView.swift */; };
 		5DB5166C2CBF8AAA00476D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB5166B2CBF8AAA00476D77 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		5D5447A92D1E66CB009CFEF5 /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
 		5D5447B02D1E741A009CFEF5 /* SyncUpsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsListTests.swift; sourceTree = "<group>"; };
 		5D5447B32D1E77F5009CFEF5 /* SyncUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpForm.swift; sourceTree = "<group>"; };
+		5D5447CB2D2BAD18009CFEF5 /* SyncUpFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpFormTests.swift; sourceTree = "<group>"; };
 		5DB516642CBF8AA800476D77 /* MyTCATutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTCATutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTCATutorialApp.swift; sourceTree = "<group>"; };
 		5DB516692CBF8AA800476D77 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				5D5447B02D1E741A009CFEF5 /* SyncUpsListTests.swift */,
+				5D5447CB2D2BAD18009CFEF5 /* SyncUpFormTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D5447B22D1E7439009CFEF5 /* SyncUpsListTests.swift in Sources */,
+				5D5447CC2D2BAD18009CFEF5 /* SyncUpFormTests.swift in Sources */,
 				5DB5167A2CBF8AAB00476D77 /* MyTCATutorialTests.swift in Sources */,
 				5DF820DA2CEC7D4500DFA53B /* CounterFeatureTests.swift in Sources */,
 				5DCA4F522CF04284007812E4 /* AppFeatureTests.swift in Sources */,

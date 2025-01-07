@@ -27,15 +27,17 @@ struct SyncUpForm {
         case onDeleteAttendees(IndexSet)
     }
     
+    @Dependency(\.uuid) var uuid
+    
     var body: some ReducerOf<Self> {
         BindingReducer()
         
         Reduce { state, action in
             switch action {
             case .addAttendeeButtonTapped:
-                state.syncUp.attendees.append(
-                    Attendee(id: Attendee.ID())
-                )
+                let attendee = Attendee(id: uuid())
+                state.syncUp.attendees.append(attendee)
+                state.focus = .attendee(state.syncUp.attendees[state.syncUp.attendees.count - 1].id)
                 return .none
                 
             case .binding:
@@ -45,7 +47,7 @@ struct SyncUpForm {
                 state.syncUp.attendees.remove(atOffsets: indices)
                 guard !state.syncUp.attendees.isEmpty,
                       let firstIndex = indices.first else {
-                    state.syncUp.attendees.append(Attendee(id: Attendee.ID()))
+                    state.syncUp.attendees.append(Attendee(id: uuid()))
                     return .none
                 }
                 let index = min(firstIndex, state.syncUp.attendees.count - 1)
@@ -59,11 +61,6 @@ struct SyncUpForm {
 struct SyncUpFormView: View {
     @Bindable var store: StoreOf<SyncUpForm>
     @FocusState var focus: SyncUpForm.State.Field?
-    
-//    enum Field: Hashable {
-//        case attendee(Attendee.ID)
-//        case title
-//    }
     
     var body: some View {
         Form {
@@ -90,15 +87,10 @@ struct SyncUpFormView: View {
                 }
                 .onDelete { indices in
                     store.send(.onDeleteAttendees(indices))
-//                    store.send(.onDeleteAttendees(indices))
-//                    guard !store.syncUp.attendees.isEmpty, let firstIndex = indices.first else { return }
-//                    let index = min(firstIndex, store.syncUp.attendees.count - 1)
-//                    focus = .attendee(store.syncUp.attendees[index].id)
                 }
                 
                 Button("New attendee") {
                     store.send(.addAttendeeButtonTapped)
-//                    focus = .attendee(store.syncUp.attendees.last!.id)
                 }
             } header: {
                 Text("Attendee")
