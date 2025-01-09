@@ -13,7 +13,7 @@ struct SyncUpsList {
     @ObservableState
     struct State: Equatable {
         @Presents var addSyncUp: SyncUpForm.State?
-        var syncUps: IdentifiedArrayOf<SyncUp> = []
+        @Shared(.syncUps) var syncUps
     }
     
     enum Action {
@@ -40,7 +40,9 @@ struct SyncUpsList {
             case .confirmAddButtonTapped:
                 guard let newSyncUp = state.addSyncUp?.syncUp else { return .none }
                 state.addSyncUp = nil
-                state.syncUps.append(newSyncUp)
+                state.$syncUps.withLock {
+                    $0.append(newSyncUp)
+                }
                 return .none
                 
             case .discardButtonTapped:
@@ -48,7 +50,9 @@ struct SyncUpsList {
                 return .none
                 
             case let .onDelete(indexSet):
-                state.syncUps.remove(atOffsets: indexSet)
+                state.$syncUps.withLock {
+                    $0.remove(atOffsets: indexSet)
+                }
                 return .none
                 
             case .syncUpTapped:
@@ -58,6 +62,12 @@ struct SyncUpsList {
         .ifLet(\.$addSyncUp, action: \.addSyncUp) {
             SyncUpForm()
         }
+    }
+}
+
+extension SharedKey where Self == FileStorageKey<IdentifiedArrayOf<SyncUp>>.Default {
+    static var syncUps: Self {
+        Self[.fileStorage(.documentsDirectory.appending(component: "sync-ups.json")), default: []]
     }
 }
 

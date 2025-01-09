@@ -34,6 +34,7 @@
 		5DB516AE2CC79CD300476D77 /* 01-FocusState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */; };
 		5DB516B02CC8CB0E00476D77 /* 01-OptionalBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */; };
 		5DB516B52CCF5D8000476D77 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB516B42CCF5D8000476D77 /* FileStorage.swift */; };
+		5DB64F582D2F5A2B00C0B5F3 /* SyncUpDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB64F572D2F5A2B00C0B5F3 /* SyncUpDetail.swift */; };
 		5DCA4F4C2CEEEFD6007812E4 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA4F4B2CEEEFD6007812E4 /* NumberFactClient.swift */; };
 		5DCA4F4E2CF03C8F007812E4 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA4F4D2CF03C8F007812E4 /* AppFeature.swift */; };
 		5DCA4F522CF04284007812E4 /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA4F512CF04284007812E4 /* AppFeatureTests.swift */; };
@@ -94,6 +95,7 @@
 		5DB516AD2CC79CD300476D77 /* 01-FocusState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-FocusState.swift"; sourceTree = "<group>"; };
 		5DB516AF2CC8CB0E00476D77 /* 01-OptionalBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "01-OptionalBasics.swift"; sourceTree = "<group>"; };
 		5DB516B42CCF5D8000476D77 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		5DB64F572D2F5A2B00C0B5F3 /* SyncUpDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpDetail.swift; sourceTree = "<group>"; };
 		5DCA4F4B2CEEEFD6007812E4 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		5DCA4F4D2CF03C8F007812E4 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 		5DCA4F512CF04284007812E4 /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				5D5447A92D1E66CB009CFEF5 /* SyncUpsList.swift */,
 				5D5447B32D1E77F5009CFEF5 /* SyncUpForm.swift */,
+				5DB64F572D2F5A2B00C0B5F3 /* SyncUpDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				5DCA4F4E2CF03C8F007812E4 /* AppFeature.swift in Sources */,
 				5DB516AA2CC779BA00476D77 /* 01-TwoCounters.swift in Sources */,
 				5DB516A42CC1035900476D77 /* 01-Animations.swift in Sources */,
+				5DB64F582D2F5A2B00C0B5F3 /* SyncUpDetail.swift in Sources */,
 				5DB5166A2CBF8AA800476D77 /* RootView.swift in Sources */,
 				5DB516972CC0D1A700476D77 /* AboutView.swift in Sources */,
 				5DB516992CC0D44D00476D77 /* TemplateText.swift in Sources */,

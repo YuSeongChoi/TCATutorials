@@ -25,7 +25,7 @@ struct MyTCATutorialApp: App {
             ._printChanges()
     }
     
-    static let syncUpsStore = Store(initialState: SyncUpsList.State(syncUps: [.mock])) {
+    static let syncUpsStore = Store(initialState: SyncUpsList.State()) {
         SyncUpsList()
             ._printChanges()
     }

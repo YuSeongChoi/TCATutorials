@@ -24,6 +24,22 @@ struct SyncUpsListTests {
         await store.send(.addSyncUpButtonTapped) {
             $0.addSyncUp = SyncUpForm.State(syncUp: SyncUp(id: SyncUp.ID(0)))
         }
+        
+        let editedSyncUp = SyncUp(
+            id: SyncUp.ID(0),
+            attendees: [
+                Attendee(id: Attendee.ID(), name: "Chodan"),
+                Attendee(id: Attendee.ID(), name: "Magenta")
+            ],
+            title: "QWER"
+        )
+        await store.send(.addSyncUp(.presented(.set(\.syncUp, editedSyncUp)))) {
+            $0.addSyncUp?.syncUp = editedSyncUp
+        }
+        
+        await store.send(.confirmAddButtonTapped) {
+            $0.addSyncUp = nil
+        }
     }
     
     @Test("삭제 테스트")
