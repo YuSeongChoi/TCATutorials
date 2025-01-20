@@ -28,13 +28,13 @@ struct MyTCATutorialApp: App {
     var body: some Scene {
         WindowGroup {
             // MARK: - Case Study 뷰로 실행
-//            RootView()
+            RootView()
             // MARK: - Tutorial 뷰로 실행
 //            CounterTutoView(store: MyTCATutorialApp.counterStore)
             // MARK: - APPState 뷰로 실행
 //            AppView(store: MyTCATutorialApp.appStore)
             // MARK: - ContactState 뷰로 실행
-            ContactsView(store: MyTCATutorialApp.contactStore)
+//            ContactsView(store: MyTCATutorialApp.contactStore)
         }
     }
 }

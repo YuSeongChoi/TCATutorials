@@ -10,6 +10,7 @@
 		5D0D2FB92D0A7EDF00439560 /* ContactsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0D2FB62D0975C200439560 /* ContactsFeatureTests.swift */; };
 		5D24DE0D2D3A4D5D00178F6C /* 02-SharedStateUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2914F2D3A17D700648DBB /* 02-SharedStateUserDefaults.swift */; };
 		5D24DE0E2D3A4D7500178F6C /* 02-SharedStateOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2914D2D37743F00648DBB /* 02-SharedStateOnboarding.swift */; };
+		5D24DE152D3A4FA300178F6C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5D24DE142D3A4FA300178F6C /* ComposableArchitecture */; };
 		5D45E1452D01976A00F30ABD /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45E1442D01976A00F30ABD /* AddContactFeature.swift */; };
 		5DA2914C2D3651D900648DBB /* 02-SharedStateInMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2914B2D3651D900648DBB /* 02-SharedStateInMemory.swift */; };
 		5DB06A3C2D35FB6000ECB46E /* 02-SharedStateFileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB06A3B2D35FB6000ECB46E /* 02-SharedStateFileStorage.swift */; };
@@ -62,7 +63,6 @@
 
 /* Begin PBXFileReference section */
 		5D0D2FB62D0975C200439560 /* ContactsFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeatureTests.swift; sourceTree = "<group>"; };
-		5D24DE112D3A4ED000178F6C /* swift-composable-architecutre */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "swift-composable-architecutre"; sourceTree = "<group>"; };
 		5D45E1442D01976A00F30ABD /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 		5DA2914B2D3651D900648DBB /* 02-SharedStateInMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "02-SharedStateInMemory.swift"; sourceTree = "<group>"; };
 		5DA2914D2D37743F00648DBB /* 02-SharedStateOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "02-SharedStateOnboarding.swift"; sourceTree = "<group>"; };
@@ -108,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D24DE152D3A4FA300178F6C /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,18 +129,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D24DE122D3A4ED000178F6C /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				5D24DE112D3A4ED000178F6C /* swift-composable-architecutre */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
 		5DB5165B2CBF8AA800476D77 = {
 			isa = PBXGroup;
 			children = (
-				5D24DE122D3A4ED000178F6C /* Packages */,
 				5DB516662CBF8AA800476D77 /* MyTCATutorial */,
 				5DB516782CBF8AAB00476D77 /* MyTCATutorialTests */,
 				5DB516822CBF8AAB00476D77 /* MyTCATutorialUITests */,
@@ -163,7 +155,6 @@
 			children = (
 				5DF820D22CEB2FE500DFA53B /* Info.plist */,
 				5DB516672CBF8AA800476D77 /* MyTCATutorialApp.swift */,
-				5DB516692CBF8AA800476D77 /* RootView.swift */,
 				5DF820CF2CEADEB300DFA53B /* Tutorial */,
 				5DB516A02CC0E9F300476D77 /* CaseStudyViews */,
 				5DB516952CC0D17500476D77 /* Internal */,
@@ -214,13 +205,14 @@
 		5DB516A02CC0E9F300476D77 /* CaseStudyViews */ = {
 			isa = PBXGroup;
 			children = (
-				5DB516B22CCF5D3B00476D77 /* Basics */,
+				5DB516692CBF8AA800476D77 /* RootView.swift */,
+				5DB516B22CCF5D3B00476D77 /* Studies */,
 				5DB516B32CCF5D5800476D77 /* Shared */,
 			);
 			path = CaseStudyViews;
 			sourceTree = "<group>";
 		};
-		5DB516B22CCF5D3B00476D77 /* Basics */ = {
+		5DB516B22CCF5D3B00476D77 /* Studies */ = {
 			isa = PBXGroup;
 			children = (
 				5DB516A12CC0EA1600476D77 /* 01-AlertsAndConfirmationDialogs.swift */,
@@ -236,7 +228,7 @@
 				5DA2914D2D37743F00648DBB /* 02-SharedStateOnboarding.swift */,
 				5DA2914F2D3A17D700648DBB /* 02-SharedStateUserDefaults.swift */,
 			);
-			path = Basics;
+			path = Studies;
 			sourceTree = "<group>";
 		};
 		5DB516B32CCF5D5800476D77 /* Shared */ = {
@@ -303,6 +295,7 @@
 			);
 			name = MyTCATutorial;
 			packageProductDependencies = (
+				5D24DE142D3A4FA300178F6C /* ComposableArchitecture */,
 			);
 			productName = MyTCATutorial;
 			productReference = 5DB516642CBF8AA800476D77 /* MyTCATutorial.app */;
@@ -377,7 +370,7 @@
 			);
 			mainGroup = 5DB5165B2CBF8AA800476D77;
 			packageReferences = (
-				5D24DE102D3A4E5600178F6C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				5D24DE132D3A4FA300178F6C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 5DB516652CBF8AA800476D77 /* Products */;
 			projectDirPath = "";
@@ -820,7 +813,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5D24DE102D3A4E5600178F6C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		5D24DE132D3A4FA300178F6C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
@@ -829,6 +822,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D24DE142D3A4FA300178F6C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D24DE132D3A4FA300178F6C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DB5165C2CBF8AA800476D77 /* Project object */;
 }
